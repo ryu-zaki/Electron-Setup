@@ -17,7 +17,7 @@ const WebProjectsContainer = () => {
                         </div>
                          
 
-                         <button data-comfoody><img src="rocket-lunch.png" alt=""/></button>
+                         <button><img src="rocket-lunch.png" alt=""/></button>
                       </div>
                    </section>
 
@@ -33,7 +33,7 @@ const WebProjectsContainer = () => {
                         </div>
                          
 
-                         <button data-raztapahan><img src="rocket-lunch.png" alt=""/></button>
+                         <button><img src="rocket-lunch.png" alt=""/></button>
                       </div>
                    </section>
 
@@ -48,7 +48,7 @@ const WebProjectsContainer = () => {
                          <p>E-commerce Website</p>
                          </div>
 
-                         <button data-balaiMario><img src="rocket-lunch.png" alt=""/></button>
+                         <button><img src="rocket-lunch.png" alt=""/></button>
                       </div>
                    </section>
                 </div>

@@ -4,7 +4,7 @@ interface DarmodeType {
   isDarkmode: boolean,
   setIsDarkmode: React.Dispatch<React.SetStateAction<boolean>>
 }
-const ComponentContext = React.createContext<DarmodeType | null>(null);
+const ComponentContext = React.createContext<DarmodeType>({isDarkmode:false, setIsDarkmode: () => {} });
  
 
 const DarkMode = ({ children }: { children: ReactElement }) => {

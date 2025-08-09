@@ -23,7 +23,7 @@
     font-size: var(--normalText); 
 }
 
-body.dark * {
+.components-wrapper.dark * {
    color: #fff;
 }
 
@@ -35,7 +35,7 @@ body .main-con {
     overflow: hidden;
 }
 
-body::before {
+.components-wrapper::before {
     content: '';
     position: fixed;
     top: -5em;
@@ -56,17 +56,17 @@ body> .main-con .blur-effect {
     user-select: none;
 }
 
-body.dark > .main-con .detailed-circle, 
-body.dark > .main-con .blur-effect {
+.components-wrapper.dark > .main-con .detailed-circle, 
+.components-wrapper.dark > .main-con .blur-effect {
     opacity: 0;
     
 }
 
-body.dark .category-title {
+.components-wrapper.dark .category-title {
     background-color: #415E80;
 }
 
-body.dark::before {
+.components-wrapper.dark::before {
    scale: 50;
    --normal: #fff;
 }
@@ -218,7 +218,7 @@ body.dark::before {
   border-radius: .5em;
   gap: .5em;
 }
-body.dark .skills-con ul li {
+.components-wrapper.dark .skills-con ul li {
     background-color: #222;
     border: 0px solid #ccc;
 }
@@ -276,7 +276,7 @@ border-radius: .8em;
     transition: all .6s;
 }
 
-body.dark .web-projects-con > section > div:nth-child(1):before {
+.components-wrapper.dark .web-projects-con > section > div:nth-child(1):before {
     background: linear-gradient(#222, #415E80);
 }
 
@@ -357,7 +357,7 @@ body.dark .web-projects-con > section > div:nth-child(1):before {
     left: .40em;
 }
 
-body.dark .educ-bg > ul::before {
+.components-wrapper.dark .educ-bg > ul::before {
     background-color: #415E80;
 }
 
@@ -378,7 +378,7 @@ body.dark .educ-bg > ul::before {
     left: 0;
 }
 
-body.dark .educ-bg > ul > li::before {
+.components-wrapper.dark .educ-bg > ul > li::before {
     background-color: #415E80;
 }
 
@@ -428,11 +428,11 @@ footer > div > img {
     border-radius: 99em;
  }
 
- body.dark .darkmode-btn {
+ .components-wrapper.dark .darkmode-btn {
     background-color: #000;
  }
 
- body.dark .darkmode-btn > div:not(.clickable) {
+ .components-wrapper.dark .darkmode-btn > div:not(.clickable) {
 left: 55%;
  }
 
@@ -597,12 +597,12 @@ left: 55%;
         z-index: -1;
     }
 
-    body.dark .profile-img::before {
+    .components-wrapper.dark .profile-img::before {
         background-color: #415E80;
         
     }
 
-    body.dark .profile-img::after {
+    .components-wrapper.dark .profile-img::after {
         border-color:  #415E80;
         
     }
@@ -679,7 +679,7 @@ left: 55%;
     transition: all .6s;
  }
 
- body.dark .main-con::before {
+ .components-wrapper.dark .main-con::before {
     background-color: #000;
  }
 
