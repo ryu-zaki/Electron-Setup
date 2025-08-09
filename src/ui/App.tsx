@@ -1,31 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import './App.css'
+import AboutContainer from './custom components/AboutContainer'
+import EducationalContainer from './custom components/EducationalContainer'
+import Footer from './custom components/Footer'
+import HeaderSection from './custom components/HeaderSection'
+import InterestContainer from './custom components/InterestContainer'
+import SkillsContainer from './custom components/SkillsContainer'
+import VisionContainer from './custom components/VisionContainer'
+import WebProjectsContainer from './custom components/WebProjectsContainer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-      <div>
+    <div className="main-con">
+  
+      {/* <!-- Detailed Circled --> */}
+       <img draggable="false" className="detailed-circle" src="detailed-circle.png" alt=""/>
+       <img draggable="false" className="detailed-circle" src="detailed-circle.png" alt=""/>
       
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      {/*  <!-- Blur Effect --> */}
+
+       <img draggable="false" className="blur-effect first" src="blur effect.png" alt=""/>
+       <img draggable="false" className="blur-effect second" src="blur effect.png" alt=""/>
+        {/* <!-- Darkmode button --> */}
+
+         <div className="darkmode-btn">
+          <div className="clickable"></div>
+            <div>
+               <img src="theme/light-mode(active).png" alt=""/> 
+            </div>
+
+            <img src="theme/light-mode(inactive).png" alt=""/>
+            <img src="theme/dark-mode(inactive).png" alt=""/>
+         </div>
+
+       <div className="inner-con">
+
+        <HeaderSection />
+
+        {/* <!-- Main Page and Contents --> */}
+        <main className="sides-wrapper">
+            {/* <!-- Left Side --> */}
+            <section className="left-side">   
+                {/* <!-- About Section --> */}
+             <AboutContainer/>
+             <InterestContainer />
+             <SkillsContainer />
+             <VisionContainer/>
+            
+            </section>
+
+           {/*  <!-- Right Side --> */}
+            <section className="right-side">
+                <WebProjectsContainer />
+                <EducationalContainer />
+            </section>
+        </main>
+        </div>
+        <Footer />
+    </div>
   )
 }
 
