@@ -23,7 +23,7 @@ function App() {
   
        <BackgroundDetails />
        <DarkmodeButton />
-       <div className="inner-con">
+       <div className="inner-con bg-red">
 
         <HeaderSection />
         <main className="sides-wrapper">

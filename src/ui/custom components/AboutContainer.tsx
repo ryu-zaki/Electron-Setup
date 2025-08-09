@@ -1,4 +1,6 @@
 const AboutContainer = () => {
+    
+    
     return (
         <section className="about-con">
                 <div>
@@ -9,17 +11,17 @@ const AboutContainer = () => {
                 <div className="about-info">
                     <ul>
                         <li>
-                            <div><img src="/phone-call.png" alt=""/></div>
+                            <div><img src="phone-call.png" alt=""/></div>
                             <p>09460474507</p>
                         </li>
 
                         <li>
-                            <div><img src="/envelope.png" alt=""/></div>
+                            <div><img src="envelope.png" alt=""/></div>
                             <p>jhonwellespanola4@gmail.com</p>
                         </li>
 
                         <li>
-                            <div><img src="/linkedin.png" alt=""/></div>
+                            <div><img src="linkedin.png" alt=""/></div>
                             <p>Jhonwell Española</p>
                         </li>
                     </ul>
